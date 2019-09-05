@@ -15,6 +15,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using IHostingEnvironment = Microsoft.AspNetCore.Hosting.IHostingEnvironment;
+using Core.Infrastructure.HealthChecks;
 
 namespace Catalog
 {
@@ -57,6 +58,8 @@ namespace Catalog
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.ConfigureApplicationHealthCheck();
 
             app.UseCors("CorsPolicy");
 
