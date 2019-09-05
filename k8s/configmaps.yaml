@@ -22,13 +22,9 @@ data:
         "username": "guest",
         "password": "guest"
       },
-      
-      "application": {
-        "portNumber": 7002
-      },
-      
+
       "database": {
-        "connectionString": "host=localhost;database=Catalog;password=ABC123!!;username=application"
+        "connectionString": "host=document.data;database=Catalog;password=ABC123!!;username=application"
       }
     }
 
