@@ -38,6 +38,7 @@ namespace Catalog
                 {
                     builder.AddConfiguration(hostingContext.Configuration.GetSection("Logging"));
                 })
+                .ConfigureApplication()
                 .ConfigureLogging()
                 .ConfigureMartin()
                 .ConfigureSwagger()
