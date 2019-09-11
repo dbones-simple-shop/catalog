@@ -8,7 +8,10 @@ metadata:
   name: catalog
 spec:
   ports:
-  - port: 7002
+  - name: http
+    protocol: TCP
+    port: 7002
+    targetPort: 7002
   selector:
     app: simple-shop
     component: catalog
